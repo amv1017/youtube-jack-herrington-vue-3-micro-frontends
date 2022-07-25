@@ -49,7 +49,9 @@ module.exports = {
       name: "remote",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./Header": "./src/Header.vue",
+      },
       shared: require("./package.json").dependencies,
     }),
     new HtmlWebPackPlugin({
