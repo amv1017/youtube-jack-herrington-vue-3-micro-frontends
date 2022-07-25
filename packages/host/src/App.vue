@@ -10,11 +10,18 @@
         AddOne
       </button>
     </div>
+    <div class="mt-10">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import Header from "remote/Header"
+import { defineAsyncComponent } from "vue"
+// import Header from "remote/Header"
+
+const Header = defineAsyncComponent(() => import("remote/Header"))
+
 export default {
   components: {
     Header
