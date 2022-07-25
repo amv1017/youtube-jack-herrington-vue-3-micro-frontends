@@ -1,0 +1,16 @@
+{
+  "name": "youtube-jack-herrington-vue-3-micro-frontends",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "wsrun": "^5.2.4"
+  }
+}
